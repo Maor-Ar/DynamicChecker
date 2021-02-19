@@ -1,0 +1,404 @@
+﻿<?xml version="1.0" encoding="utf-8"?><DEFECTS><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\User\Desktop\לימודים מאור\מבוא לתוכנה\SemesterProject\SemesterProject\</FILEPATH>
+      <FILENAME>Source.c</FILENAME>
+      <LINE>77</LINE>
+      <COLUMN>11</COLUMN>
+    </SFA>
+    <DEFECTCODE>6386</DEFECTCODE>
+    <DESCRIPTION>Buffer overrun while writing to 'board':  the writable size is 'sizeof(piece *)*(unsigned int)size' bytes, but '8' bytes might be written.</DESCRIPTION>
+    <FUNCTION>set_board</FUNCTION>
+    <DECORATED>set_board</DECORATED>
+    <FUNCLINE>66</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>C:\Users\User\Desktop\לימודים מאור\מבוא לתוכנה\SemesterProject\SemesterProject\</FILEPATH>
+        <FILENAME>Source.c</FILENAME>
+        <LINE>68</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\User\Desktop\לימודים מאור\מבוא לתוכנה\SemesterProject\SemesterProject\</FILEPATH>
+        <FILENAME>Source.c</FILENAME>
+        <LINE>69</LINE>
+        <COLUMN>7</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'board' is a 0 byte array</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\User\Desktop\לימודים מאור\מבוא לתוכנה\SemesterProject\SemesterProject\</FILEPATH>
+        <FILENAME>Source.c</FILENAME>
+        <LINE>70</LINE>
+        <COLUMN>5</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Skip this branch, (assume '!board' is false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\User\Desktop\לימודים מאור\מבוא לתוכנה\SemesterProject\SemesterProject\</FILEPATH>
+        <FILENAME>Source.c</FILENAME>
+        <LINE>75</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\User\Desktop\לימודים מאור\מבוא לתוכנה\SemesterProject\SemesterProject\</FILEPATH>
+        <FILENAME>Source.c</FILENAME>
+        <LINE>75</LINE>
+        <COLUMN>19</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Enter this loop, (assume 'i&lt;size')</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\User\Desktop\לימודים מאור\מבוא לתוכנה\SemesterProject\SemesterProject\</FILEPATH>
+        <FILENAME>Source.c</FILENAME>
+        <LINE>77</LINE>
+        <COLUMN>11</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\User\Desktop\לימודים מאור\מבוא לתוכנה\SemesterProject\SemesterProject\</FILEPATH>
+        <FILENAME>Source.c</FILENAME>
+        <LINE>78</LINE>
+        <COLUMN>6</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Skip this branch, (assume '!board[i]' is false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\User\Desktop\לימודים מאור\מבוא לתוכנה\SemesterProject\SemesterProject\</FILEPATH>
+        <FILENAME>Source.c</FILENAME>
+        <LINE>75</LINE>
+        <COLUMN>28</COLUMN>
+        <KEYEVENT>
+          <ID>5</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'i' may equal 1</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\User\Desktop\לימודים מאור\מבוא לתוכנה\SemesterProject\SemesterProject\</FILEPATH>
+        <FILENAME>Source.c</FILENAME>
+        <LINE>75</LINE>
+        <COLUMN>19</COLUMN>
+        <KEYEVENT>
+          <ID>6</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Continue this loop, (assume 'i&lt;size')</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\User\Desktop\לימודים מאור\מבוא לתוכנה\SemesterProject\SemesterProject\</FILEPATH>
+        <FILENAME>Source.c</FILENAME>
+        <LINE>77</LINE>
+        <COLUMN>11</COLUMN>
+        <KEYEVENT>
+          <ID>7</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>Invalid write to 'board', (outside its writable range)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\User\Desktop\לימודים מאור\מבוא לתוכנה\SemesterProject\SemesterProject\</FILEPATH>
+      <FILENAME>Source.c</FILENAME>
+      <LINE>78</LINE>
+      <COLUMN>6</COLUMN>
+    </SFA>
+    <DEFECTCODE>6385</DEFECTCODE>
+    <DESCRIPTION>Reading invalid data from 'board':  the readable size is 'sizeof(piece *)*(unsigned int)size' bytes, but '8' bytes may be read.</DESCRIPTION>
+    <FUNCTION>set_board</FUNCTION>
+    <DECORATED>set_board</DECORATED>
+    <FUNCLINE>66</FUNCLINE>
+    <PROBABILITY>1</PROBABILITY>
+    <RANK>4</RANK>
+    <CATEGORY>
+      <RULECATEGORY>mspft</RULECATEGORY>
+    </CATEGORY>
+    <PATH>
+      <SFA>
+        <FILEPATH>C:\Users\User\Desktop\לימודים מאור\מבוא לתוכנה\SemesterProject\SemesterProject\</FILEPATH>
+        <FILENAME>Source.c</FILENAME>
+        <LINE>68</LINE>
+        <COLUMN>9</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\User\Desktop\לימודים מאור\מבוא לתוכנה\SemesterProject\SemesterProject\</FILEPATH>
+        <FILENAME>Source.c</FILENAME>
+        <LINE>69</LINE>
+        <COLUMN>7</COLUMN>
+        <KEYEVENT>
+          <ID>1</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'board' is a 0 byte array</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\User\Desktop\לימודים מאור\מבוא לתוכנה\SemesterProject\SemesterProject\</FILEPATH>
+        <FILENAME>Source.c</FILENAME>
+        <LINE>70</LINE>
+        <COLUMN>5</COLUMN>
+        <KEYEVENT>
+          <ID>2</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Skip this branch, (assume '!board' is false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\User\Desktop\לימודים מאור\מבוא לתוכנה\SemesterProject\SemesterProject\</FILEPATH>
+        <FILENAME>Source.c</FILENAME>
+        <LINE>75</LINE>
+        <COLUMN>10</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\User\Desktop\לימודים מאור\מבוא לתוכנה\SemesterProject\SemesterProject\</FILEPATH>
+        <FILENAME>Source.c</FILENAME>
+        <LINE>75</LINE>
+        <COLUMN>19</COLUMN>
+        <KEYEVENT>
+          <ID>3</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Enter this loop, (assume 'i&lt;size')</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\User\Desktop\לימודים מאור\מבוא לתוכנה\SemesterProject\SemesterProject\</FILEPATH>
+        <FILENAME>Source.c</FILENAME>
+        <LINE>77</LINE>
+        <COLUMN>11</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\User\Desktop\לימודים מאור\מבוא לתוכנה\SemesterProject\SemesterProject\</FILEPATH>
+        <FILENAME>Source.c</FILENAME>
+        <LINE>78</LINE>
+        <COLUMN>6</COLUMN>
+        <KEYEVENT>
+          <ID>4</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Skip this branch, (assume '!board[i]' is false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\User\Desktop\לימודים מאור\מבוא לתוכנה\SemesterProject\SemesterProject\</FILEPATH>
+        <FILENAME>Source.c</FILENAME>
+        <LINE>75</LINE>
+        <COLUMN>28</COLUMN>
+        <KEYEVENT>
+          <ID>5</ID>
+          <KIND>declaration</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>'i' may equal 1</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\User\Desktop\לימודים מאור\מבוא לתוכנה\SemesterProject\SemesterProject\</FILEPATH>
+        <FILENAME>Source.c</FILENAME>
+        <LINE>75</LINE>
+        <COLUMN>19</COLUMN>
+        <KEYEVENT>
+          <ID>6</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Continue this loop, (assume 'i&lt;size')</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\User\Desktop\לימודים מאור\מבוא לתוכנה\SemesterProject\SemesterProject\</FILEPATH>
+        <FILENAME>Source.c</FILENAME>
+        <LINE>77</LINE>
+        <COLUMN>11</COLUMN>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\User\Desktop\לימודים מאור\מבוא לתוכנה\SemesterProject\SemesterProject\</FILEPATH>
+        <FILENAME>Source.c</FILENAME>
+        <LINE>78</LINE>
+        <COLUMN>6</COLUMN>
+        <KEYEVENT>
+          <ID>7</ID>
+          <KIND>branch</KIND>
+          <IMPORTANCE>Full</IMPORTANCE>
+          <MESSAGE>Skip this branch, (assume '!board[i]' is false)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+      <SFA>
+        <FILEPATH>C:\Users\User\Desktop\לימודים מאור\מבוא לתוכנה\SemesterProject\SemesterProject\</FILEPATH>
+        <FILENAME>Source.c</FILENAME>
+        <LINE>78</LINE>
+        <COLUMN>6</COLUMN>
+        <KEYEVENT>
+          <ID>8</ID>
+          <KIND>usage</KIND>
+          <IMPORTANCE>Essential</IMPORTANCE>
+          <MESSAGE>Invalid read from 'board', (outside its readable range)</MESSAGE>
+        </KEYEVENT>
+      </SFA>
+    </PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\User\Desktop\לימודים מאור\מבוא לתוכנה\SemesterProject\SemesterProject\</FILEPATH>
+      <FILENAME>Source.c</FILENAME>
+      <LINE>120</LINE>
+      <COLUMN>7</COLUMN>
+    </SFA>
+    <DEFECTCODE>6031</DEFECTCODE>
+    <DESCRIPTION>Return value ignored: 'scanf'.</DESCRIPTION>
+    <FUNCTION>mainmenu</FUNCTION>
+    <DECORATED>mainmenu</DECORATED>
+    <FUNCLINE>107</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\User\Desktop\לימודים מאור\מבוא לתוכנה\SemesterProject\SemesterProject\</FILEPATH>
+      <FILENAME>Source.c</FILENAME>
+      <LINE>180</LINE>
+      <COLUMN>7</COLUMN>
+    </SFA>
+    <DEFECTCODE>6031</DEFECTCODE>
+    <DESCRIPTION>Return value ignored: 'scanf'.</DESCRIPTION>
+    <FUNCTION>game_on</FUNCTION>
+    <DECORATED>game_on</DECORATED>
+    <FUNCLINE>172</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\User\Desktop\לימודים מאור\מבוא לתוכנה\SemesterProject\SemesterProject\</FILEPATH>
+      <FILENAME>Source.c</FILENAME>
+      <LINE>183</LINE>
+      <COLUMN>6</COLUMN>
+    </SFA>
+    <DEFECTCODE>6031</DEFECTCODE>
+    <DESCRIPTION>Return value ignored: 'scanf'.</DESCRIPTION>
+    <FUNCTION>game_on</FUNCTION>
+    <DECORATED>game_on</DECORATED>
+    <FUNCLINE>172</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\User\Desktop\לימודים מאור\מבוא לתוכנה\SemesterProject\SemesterProject\</FILEPATH>
+      <FILENAME>Source.c</FILENAME>
+      <LINE>187</LINE>
+      <COLUMN>7</COLUMN>
+    </SFA>
+    <DEFECTCODE>6031</DEFECTCODE>
+    <DESCRIPTION>Return value ignored: 'scanf'.</DESCRIPTION>
+    <FUNCTION>game_on</FUNCTION>
+    <DECORATED>game_on</DECORATED>
+    <FUNCLINE>172</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\User\Desktop\לימודים מאור\מבוא לתוכנה\SemesterProject\SemesterProject\</FILEPATH>
+      <FILENAME>Source.c</FILENAME>
+      <LINE>209</LINE>
+      <COLUMN>6</COLUMN>
+    </SFA>
+    <DEFECTCODE>6031</DEFECTCODE>
+    <DESCRIPTION>Return value ignored: 'scanf'.</DESCRIPTION>
+    <FUNCTION>game_on</FUNCTION>
+    <DECORATED>game_on</DECORATED>
+    <FUNCLINE>172</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\User\Desktop\לימודים מאור\מבוא לתוכנה\SemesterProject\SemesterProject\</FILEPATH>
+      <FILENAME>Source.c</FILENAME>
+      <LINE>213</LINE>
+      <COLUMN>7</COLUMN>
+    </SFA>
+    <DEFECTCODE>6031</DEFECTCODE>
+    <DESCRIPTION>Return value ignored: 'scanf'.</DESCRIPTION>
+    <FUNCTION>game_on</FUNCTION>
+    <DECORATED>game_on</DECORATED>
+    <FUNCLINE>172</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\User\Desktop\לימודים מאור\מבוא לתוכנה\SemesterProject\SemesterProject\</FILEPATH>
+      <FILENAME>Source.c</FILENAME>
+      <LINE>236</LINE>
+      <COLUMN>7</COLUMN>
+    </SFA>
+    <DEFECTCODE>6031</DEFECTCODE>
+    <DESCRIPTION>Return value ignored: 'scanf'.</DESCRIPTION>
+    <FUNCTION>game_on</FUNCTION>
+    <DECORATED>game_on</DECORATED>
+    <FUNCLINE>172</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\User\Desktop\לימודים מאור\מבוא לתוכנה\SemesterProject\SemesterProject\</FILEPATH>
+      <FILENAME>Source.c</FILENAME>
+      <LINE>269</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>6031</DEFECTCODE>
+    <DESCRIPTION>Return value ignored: 'scanf'.</DESCRIPTION>
+    <FUNCTION>game_on</FUNCTION>
+    <DECORATED>game_on</DECORATED>
+    <FUNCLINE>172</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\User\Desktop\לימודים מאור\מבוא לתוכנה\SemesterProject\SemesterProject\</FILEPATH>
+      <FILENAME>Source.c</FILENAME>
+      <LINE>271</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>6031</DEFECTCODE>
+    <DESCRIPTION>Return value ignored: 'scanf'.</DESCRIPTION>
+    <FUNCTION>game_on</FUNCTION>
+    <DECORATED>game_on</DECORATED>
+    <FUNCLINE>172</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\User\Desktop\לימודים מאור\מבוא לתוכנה\SemesterProject\SemesterProject\</FILEPATH>
+      <FILENAME>Source.c</FILENAME>
+      <LINE>286</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>6031</DEFECTCODE>
+    <DESCRIPTION>Return value ignored: 'scanf'.</DESCRIPTION>
+    <FUNCTION>game_on</FUNCTION>
+    <DECORATED>game_on</DECORATED>
+    <FUNCLINE>172</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT><DEFECT>
+    <SFA>
+      <FILEPATH>C:\Users\User\Desktop\לימודים מאור\מבוא לתוכנה\SemesterProject\SemesterProject\</FILEPATH>
+      <FILENAME>Source.c</FILENAME>
+      <LINE>288</LINE>
+      <COLUMN>8</COLUMN>
+    </SFA>
+    <DEFECTCODE>6031</DEFECTCODE>
+    <DESCRIPTION>Return value ignored: 'scanf'.</DESCRIPTION>
+    <FUNCTION>game_on</FUNCTION>
+    <DECORATED>game_on</DECORATED>
+    <FUNCLINE>172</FUNCLINE>
+    <PATH></PATH>
+  </DEFECT></DEFECTS>

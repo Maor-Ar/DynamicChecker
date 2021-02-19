@@ -1,0 +1,7 @@
+  C)ccc  h)                      k)                             
+ C)   cc h)                      k)                             
+C)       h)HHHH  e)EEEEE  c)CCCC k)  KK e)EEEEE  r)RRR   s)SSSS 
+C)       h)   HH e)EEEE  c)      k)KK   e)EEEE  r)   RR s)SSSS  
+ C)   cc h)   HH e)      c)      k) KK  e)      r)           s) 
+  C)ccc  h)   HH  e)EEEE  c)CCCC k)  KK  e)EEEE r)      s)SSSS  
+                                                                
